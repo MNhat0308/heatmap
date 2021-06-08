@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+// const axios = require('axios');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,7 +13,8 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    // js('resources/js/index.js', 'public/js')
+    .js('resources/js/index.js', 'public/js')
+    .postCss('resources/css/style1.css', 'public/css')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
